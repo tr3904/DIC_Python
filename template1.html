@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1: Loan Upload</title>
+</head>
+<body>
+    <h1>Upload Loan File</h1>
+    <form id="loanForm">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="2000" max="2100" required><br><br>
+        
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <!-- Add more months -->
+        </select><br><br>
+        
+        <label for="fileType">File Type:</label>
+        <select id="fileType" name="fileType">
+            <option value="Excel">Excel</option>
+            <option value="CSV">CSV</option>
+        </select><br><br>
+
+        <input type="file" id="loanFile" name="loanFile" required><br><br>
+        
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
